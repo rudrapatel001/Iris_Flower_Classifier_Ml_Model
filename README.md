@@ -1,7 +1,3 @@
-Given the provided code, I'll incorporate it into the README to provide a comprehensive guide. Here’s the updated README file for your GitHub repository:
-
----
-
 # Iris Flower Classifier with Flask
 
 This project features a machine learning model that classifies Iris flowers using a Flask web application. The classifier can predict whether a flower is **Iris Setosa**, **Iris Versicolor**, or **Iris Virginica** based on its measurements.
