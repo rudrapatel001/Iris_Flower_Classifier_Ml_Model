@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>IRIS FLOWER DETECTION</title>
+        <style>
+            body {
+                background-color: #d4a3ae;
+                font-family: Arial, sans-serif;
+                color: #333;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                color: #4A235A;
+                font-size: 2.5rem;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            form {
+                background-color: #f8f4f9;
+                padding: 1rem;
+                border-radius: 10px;
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+                width: 300px;
+                margin: auto;
+                text-align: left;
+            }
+
+            form b {
+                color: #4A235A;
+            }
+
+            form input[type="text"] {
+                width: calc(100% - 10px);
+                padding: 0.5rem;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            form input[type="submit"] {
+                background-color: #4A235A;
+                color: white;
+                border: none;
+                padding: 0.7rem 1.5rem;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1rem;
+                transition: background-color 0.3s ease;
+            }
+
+            form input[type="submit"]:hover {
+                background-color: #7D3C98;
+            }
+
+            center {
+                padding: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+
+        <center>
+            <h1>IRIS FLOWER DETECTION</h1><br>
+            
+            <form method="POST" action="{{url_for('home')}}" autocomplete="off">
+                <b>
+                    First value: <input type="text" name='a' placeholder="enter 1"> <br>
+                    Second value: <input type="text" name='b' placeholder="enter 2"> <br>
+                    Third value: <input type="text" name='c' placeholder="enter 3"> <br>
+                    Fourth value: <input type="text" name='d' placeholder="enter 4"> <br>
+                </b>
+                <input type="submit" value='predict!'>
+            </form>
+        </center>
+
+    </body>
+</html>
